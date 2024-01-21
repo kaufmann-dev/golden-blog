@@ -1,0 +1,240 @@
+/* Basic Styling */
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Lexend+Deca|Montserrat|Poiret+One|Raleway|Tangerine&display=swap');
+* {
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	line-height: 1.6;
+	padding: 0;
+	margin: 0;
+	background-color: #1E1E1E;
+}
+a {
+	transition: 0.5s;
+	text-decoration: none;
+	color: #FB0;
+}
+main a:hover {
+	text-decoration: underline;
+}
+h1 {
+	font-family: 'Lexend Deca', sans-serif;
+	color: #FB0;
+	font-size: 1.6em;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	font-size: 1.4em;
+}
+h3 {
+	font-size: 1.2em;
+}
+hr {
+	border: 0;
+	height: 2px;
+	background: #AAA;
+}
+h2, h3 {
+	margin: 0.5em 0;
+	padding: 0;
+}
+p, a {
+	padding: 0;
+	margin: 0;
+}
+p {
+	text-align: justify;
+}
+img, video, audio {
+	vertical-align: top;
+}
+/* Header */
+header {
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+	width: 100%;
+	color: #FB0;
+	padding: 20px 0;
+	font-size: 3em;
+}
+/* Main */
+main {
+	color: #FFF;
+	background-color: #303030;
+	width: 100%;
+	padding: 30px;
+}
+div#wrapper {
+	max-width: 100%;
+	width: 1000px;
+	margin: 0 auto;
+}
+article:not(.last) {
+	margin-bottom: 30px;
+}
+/* Image */
+div.img {
+	box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+	overflow: hidden;
+	border-radius: 15px;
+	margin-top: 10px;
+	width: 100%;
+}
+img {
+	transition: 0.3s;
+	width: 100%;
+}
+img:hover {
+	transform: scale(1.15);
+}
+/* Footer */
+footer {
+	font-size: 1.2em;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+	color: #FB0;
+}
+/* Navigation bar */
+nav {
+	text-align: center;
+	width: 100%;
+	background-color: #FB0;
+}
+nav div {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #000;
+	transition: 0.25s;
+	display: inline-block;
+	padding: 15px;
+}
+nav div:hover {
+	transform: scale(1.2);
+	text-transform: uppercase;
+}
+/* Second navigation bar */
+div.mininav {
+	text-align: center;
+	width: 100%;
+	background-color: #1E1E1E;
+}
+div.mininav div {
+	font-weight: bold;
+	color: #FB0;
+	transition: 0.25s;
+	display: inline-block;
+	padding: 12px 15px;
+}
+div.mininav div:hover {
+	transform: scale(1.2);
+	text-transform: uppercase;
+}
+/* Information */
+div.info {
+	border: 1px solid #AAA;
+	border-radius: 10px;
+	padding: 10px;
+}
+div.info:not(.last) {
+	margin-bottom: 30px;
+}
+/* Page counter */
+div.counter {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	width: 120px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+div.count {
+	color: #FB0;
+	text-align: center;
+	flex: 1;
+	height: 40px;
+	line-height: 40px;
+}
+button.left, button.right {
+	background-color: #1E1E1E;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 0px solid #AAA;
+	padding: 0;
+	height: 40px;
+	outline: none;
+	color: #FB0;
+	text-align: center;
+	flex: 1;
+	transition: 0.5s;
+}
+button.right:hover:not(.disabled), button.left:hover:not(.disabled) {
+	color: #1E1E1E;
+	background-color: #FB0;
+}
+button.disabled {
+	cursor: auto !important;
+	background: none !important;
+}
+/* Contact form */
+label {
+	font-weight: bold;
+}
+input[type=submit] {
+	margin-right: 10px;
+}
+input[type=submit], input[type=reset] {
+	float: left;
+	outline: none;
+	border-radius: 100px;
+	padding: 12px 20px;
+	margin-bottom: 10px;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: #1E1E1E;
+	color: #FB0;
+	transition: 0.5s;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+	background-color: #FB0;
+	color: #1E1E1E;
+}
+input[type=text], textarea {
+	display: block;
+	border-radius: 5px;
+	color: #FFF;
+	background: none;
+	outline: none;
+	font-size: 1em;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #AAA;
+	margin: 12px 0;
+	resize: vertical;
+	transition: 1s;
+}
+input[type=text]:focus, textarea:focus {
+	border: 1px solid #FB0;
+}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 100px #303030 inset !important;
+	-webkit-text-fill-color: #FFF !important;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 1.2vw;
+}
+::-webkit-scrollbar-track {
+	background: #1E1E1E;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 100px;
+	background: rgb(253, 45, 45);
+	background: linear-gradient(0deg, rgb(255, 187 ,0) 0%, rgb(253, 45, 45) 100%);
+}
